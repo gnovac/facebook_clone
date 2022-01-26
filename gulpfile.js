@@ -2,7 +2,6 @@ const {
     src,
     dest,
     series,
-    task,
     parallel,
     watch
 } = require('gulp');
@@ -98,14 +97,6 @@ function watchForChanges(done) {
     watch(paths.img, compressImages).on("change", reload);
     done();
 };
-
-task('deploy', () => {
-    src(paths.dist)
-        .pipe(ghPages({
-            remoteUrl: "https://github.com/gnovac/facebook_clone.git",
-            branch: "master"
-        }))
-});
 
 const mainFunctions = parallel(handleKits, sassCompiler, javaScript, compressImages);
 exports.cleanDeleted = cleanDeleted;
