@@ -254,6 +254,7 @@ body {
     &__stories {
         display: flex;
         padding: 8px 0 24px;
+        margin-top: 20px;
     }
 
     &__storie {
@@ -330,23 +331,23 @@ body {
         }
 
         &--one {
-            background-image: url(/dist/img/stories_airplan.jpg);
+            background-image: url('/dist/img/stories_airplan.jpg');
         }
 
         &--two {
-            background-image: url(/dist/img/stories_car.jpg);
+            background-image: url('/dist/img/stories_car.jpg');
         }
 
         &--three {
-            background-image: url(/dist/img/stories_island.jpg);
+            background-image: url('/dist/img/stories_island.jpg');
         }
 
         &--four {
-            background-image: url(/dist/img/stories_switzerland.jpg);
+            background-image: url('/dist/img/stories_switzerland.jpg');
         }
 
         &--five {
-            background-image: url(/dist/img/stories_tokyo.jpg);
+            background-image: url('/dist/img/stories_tokyo.jpg');
         }
     }
 
