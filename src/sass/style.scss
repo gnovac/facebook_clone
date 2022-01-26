@@ -9,11 +9,7 @@ body {
     background-color: #f2f3f5;
 }
 
-span {
-    color: #65676b;
-}
-
-//navigation styles starts
+/****navigation styles starts*****/
 .nav {
     display: flex;
     align-items: stretch;
@@ -22,7 +18,7 @@ span {
     position: sticky;
     z-index: 100;
     top: 0;
-    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, .75);
 
     &__left {
         display: flex;
@@ -74,6 +70,7 @@ span {
 
         span {
             font-size: 30px;
+            color: #65676b;
         }
     }
 
@@ -119,7 +116,8 @@ span {
         }
 
         img {
-            height: 30px;
+            height: 32px;
+            border-radius: 50%;
         }
     }
 
@@ -132,10 +130,15 @@ span {
             padding: 10px;
             margin: 3px;
             background-color: #e4e6eb;
-            color: #000;
             font-size: 20px;
+            font-weight: bold;
             border-radius: 50%;
             cursor: pointer;
+            transition: background-color .1s;
+
+            &:hover {
+                background-color: #d1d2d6;
+            }
         }
 
         .fa-facebook-messenger {
@@ -157,20 +160,195 @@ span {
     }
 }
 
-//navigation styles ends
+/****navigation styles ends*****/
 
+/****sidebar styles starts*****/
 .main {
-    .main_sidebar {
+    display: flex;
+
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 10px;
+        flex: 1 0 10%;
+    }
+
+    &__siderow {
         display: flex;
         align-items: center;
+        padding: 5px 5px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color .2s;
 
-        .siderow {
-            display: flex;
-            align-items: center;
-            
-            img{
-                height: 36px;
-            }
+        &:hover {
+            background-color: #e4e6eb;
+        }
+
+        img {
+            height: 45px;
+            border-radius: 50%;
+        }
+
+        span {
+            font-size: 35px;
+            padding-left: 5px;
+        }
+
+        .friends {
+            color: #1b85f5;
+        }
+
+        .saved {
+            color: #a137c6;
+        }
+
+        .groups {
+            color: #22a9fc;
+        }
+
+        .marketplace,
+        .watch,
+        .memories {
+            color: #186dd4;
+        }
+
+        .pages {
+            color: #ea582a;
+        }
+
+        .see-more {
+            padding: 10px;
+            margin: 3px;
+            background-color: #d1d2d6;
+            font-size: 20px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        h4 {
+            padding: 12px 10px;
+            font-size: 15px;
+        }
+
+        .name {
+            padding-left: 5px;
         }
     }
+
+    .underline {
+        height: 1px;
+        margin-top: 8px;
+        margin-left: 5px;
+        background-color: #d1d2d6;
+    }
+
+    /****sidebar styles ends*****/
+
+    .wall {
+        padding: 0 32px;
+    }
+
+    /****stories styles starts*****/
+
+    &__stories {
+        display: flex;
+        padding: 8px 0 24px;
+    }
+
+    &__storie {
+        position: relative;
+        margin: 0 4px;
+        width: 110px;
+        height: 190px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 180%;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #fff;
+        box-shadow: 0 5px 8px -9px rgba(0, 0, 0, .75);
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 185%;
+        }
+
+        .box-shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 8px;
+            transition: background-color .2s;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .2);
+            }
+        }
+
+        img {
+            position: absolute;
+            height: 40px;
+            margin: 10px;
+            border: 4px solid #1b74e4;
+            border-radius: 50%;
+        }
+
+        h5 {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+            padding: 10px 3px;
+        }
+
+        &--add {
+            background-color: #fff;
+            background-image: url(/dist/img/stories_profile.jpg);
+            background-position: top;
+            color: #000;
+
+            span {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                font-size: 40px;
+                transform: translateX(-50%);
+                color: #1b74e4;
+                background-color: #fff;
+                border-radius: 50%;
+                z-index: 10;
+            }
+
+            h5 {
+                padding: 28px 16px 12px;
+                background-color: #fff;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+
+        &--one {
+            background-image: url(/dist/img/stories_airplan.jpg);
+        }
+
+        &--two {
+            background-image: url(/dist/img/stories_car.jpg);
+        }
+
+        &--three {
+            background-image: url(/dist/img/stories_island.jpg);
+        }
+
+        &--four {
+            background-image: url(/dist/img/stories_switzerland.jpg);
+        }
+
+        &--five {
+            background-image: url(/dist/img/stories_tokyo.jpg);
+        }
+    }
+
+    /****sidebar styles ends*****/
 }
