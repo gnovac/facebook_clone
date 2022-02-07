@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 50%;
 }
 
 body {
@@ -307,6 +307,11 @@ body {
             background-color: #fff;
             color: #65676b;
             box-shadow: 0 0 2px 0px rgb(0 0 0 / 75%);
+            transition: background-color .3s;
+
+            &:hover {
+                background-color: #eff2f5;
+            }
         }
 
         .box-shadow {
@@ -431,7 +436,7 @@ body {
     &__create-post-tools {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-top: 0.5em;
         font-size: 1.5rem;
 
@@ -439,6 +444,7 @@ body {
             display: flex;
             align-items: center;
             padding: 0.5em;
+            color: #65676b;
             cursor: pointer;
             transition: background-color .2s;
 
@@ -492,6 +498,11 @@ body {
             font-size: 3.5rem;
             box-shadow: 0 0 2px 0px rgb(0 0 0 / 75%);
             cursor: pointer;
+            transition: background-color .3s;
+
+            &:hover {
+                background-color: #eff2f5;
+            }
         }
     }
 
@@ -528,10 +539,105 @@ body {
         }
     }
 
-
-
     /****createRoomBox styles ends****/
 
+    /****posts styles starts*****/
+    &__posts {
+        display: flex;
+        justify-content: center;
+        width: 55%;
+        background-color: #fff;
+        margin: 0.5em 0;
+        border-radius: 8px;
+        box-shadow: 0 5px 8px -9px rgba(0, 0, 0, .75);
+    }
+
+
+    &__post-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.2rem 1.6rem 0 1.6rem;
+
+        .post-info {
+            display: flex;
+            flex-direction: row;
+
+
+            &--left {
+                margin-right: 10px;
+
+                img {
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+
+            &--right {
+                display: flex;
+                flex-direction: column;
+
+                .post-owner {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+
+                .container-info {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.4rem;
+                    color: #65676b;
+
+                    .dot {
+                        position: relative;
+                        top: -3px;
+                        padding: 0 3px;
+                    }
+
+                    .material-icons {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+        }
+
+        .tools-icon {
+            color: #65676b;
+        }
+    }
+
+    &__post-content {
+
+        p {
+            padding: 0.3em 1em;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__post-options {
+        display: flex;
+        flex-direction: column;
+        padding: 0.3em 1em;
+
+        .post-react-btns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .post-btns {
+            display: flex;
+            padding: 0.5em 0;
+            justify-content: space-evenly;
+        }
+    }
+
+
+
+
+    /****posts styles ends*****/
 
     /****contacts styles starts*****/
     &__contacts {
