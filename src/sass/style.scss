@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 55%;
 }
 
 body {
@@ -14,10 +14,13 @@ body {
     font-size: 1.6rem;
 }
 
+
+
 /****navigation styles starts*****/
 .nav {
     display: flex;
     align-items: stretch;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #fff;
     position: sticky;
@@ -70,7 +73,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex: 0 1 10%;
+        flex: 1 1 25%;
         margin: 0 0.3em;
         cursor: pointer;
 
@@ -99,7 +102,7 @@ body {
     }
 
     &__right {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         padding-right: 1em;
@@ -169,12 +172,15 @@ body {
 
 /****navigation styles ends*****/
 
+
+
+
 /****sidebar styles starts*****/
 .main {
-    display: flex;
+    display: block;
 
     &__sidebar {
-        display: flex;
+        display: none;
         flex-direction: column;
         margin: 0.95em 0.65em;
         flex: 1;
@@ -256,26 +262,32 @@ body {
 
     /****sidebar styles ends*****/
 
+
+
     .wall {
         display: flex;
-        align-items: center;
-        // justify-content: center;
+        align-items: stretch;
         flex-direction: column;
         flex-wrap: wrap;
         flex: 4;
     }
 
+
+
     /****stories styles starts*****/
 
     &__stories {
+        order: 2;
         position: relative;
         display: flex;
         justify-content: space-between;
-        width: 55%;
-        margin: 1.5em 0 0.5em 0;
+        width: 100%;
+        overflow-x: scroll;
+        margin: 0;
     }
 
     &__storie {
+        flex: 0 0 auto;
         position: relative;
         width: 110px;
         height: 190px;
@@ -298,6 +310,7 @@ body {
         }
 
         span:last-child {
+            display: none;
             position: absolute;
             padding: 0.4em;
             right: -20px;
@@ -307,6 +320,11 @@ body {
             background-color: #fff;
             color: #65676b;
             box-shadow: 0 0 2px 0px rgb(0 0 0 / 75%);
+            transition: background-color .3s;
+
+            &:hover {
+                background-color: #eff2f5;
+            }
         }
 
         .box-shadow {
@@ -386,9 +404,13 @@ body {
 
     /****stories styles ends*****/
 
+
+
+
     /****createPostBox styles starts****/
 
     &__create-post {
+        order: 1;
         display: flex;
         flex-direction: column;
         background-color: #fff;
@@ -396,8 +418,13 @@ body {
         margin: 0.5em 0;
         border-radius: 8px;
         box-shadow: 0 5px 8px -9px rgba(0, 0, 0, .75);
-        width: 55%;
+        width: 100%;
+
+        .underline {
+            display: none;
+        }
     }
+
 
     &__create-post-input {
         display: flex;
@@ -429,9 +456,9 @@ body {
     }
 
     &__create-post-tools {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-top: 0.5em;
         font-size: 1.5rem;
 
@@ -439,6 +466,7 @@ body {
             display: flex;
             align-items: center;
             padding: 0.5em;
+            color: #65676b;
             cursor: pointer;
             transition: background-color .2s;
 
@@ -468,11 +496,14 @@ body {
 
     /****createPostBox styles ends****/
 
+
+
+
     /****createRoomBox styles starts****/
 
     &__create-room {
         position: relative;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         background-color: #fff;
@@ -492,6 +523,11 @@ body {
             font-size: 3.5rem;
             box-shadow: 0 0 2px 0px rgb(0 0 0 / 75%);
             cursor: pointer;
+            transition: background-color .3s;
+
+            &:hover {
+                background-color: #eff2f5;
+            }
         }
     }
 
@@ -528,14 +564,193 @@ body {
         }
     }
 
-
-
     /****createRoomBox styles ends****/
+
+
+
+
+    /****posts styles starts*****/
+    &__posts {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        order: 3;
+        width: 100%;
+        background-color: #f2f3f5;
+        margin: 0.5em 0;
+        border-radius: 8px;
+    }
+
+    .underline-hover {
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__post{
+        background-color: #fff;
+        box-shadow: 0 5px 8px -9px rgba(0, 0, 0, .75);
+        margin: 0.5em 0;
+    }
+
+
+    &__post-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.2rem 1.6rem 0 1.6rem;
+
+        .post-info {
+            display: flex;
+            flex-direction: row;
+
+
+            &--left {
+                margin-right: 10px;
+
+                img {
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+
+            &--right {
+                display: flex;
+                flex-direction: column;
+
+                .post-owner {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+
+                .container-info {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.4rem;
+                    color: #65676b;
+
+                    .dot {
+                        position: relative;
+                        top: -3px;
+                        padding: 0 3px;
+                    }
+
+                    .material-icons {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+        }
+
+        .tools-icon {
+            color: #65676b;
+            padding: 0.4em;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color .2s;
+
+            &:hover {
+                background-color: #e4e6eb;
+            }
+        }
+    }
+
+    &__post-content {
+
+        p {
+            padding: 0.3em 1em;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__post-options {
+        display: flex;
+        flex-direction: column;
+        padding: 0.3em 1em 0 1em;
+        color: #65676b;
+
+        .post-react-btns {
+            display: flex;
+            justify-content: space-between;
+
+            .post-reactions {
+                display: flex;
+
+                .reactions-icons {
+                    position: relative;
+                    width: 60px;
+
+                    .fas {
+                        position: absolute;
+                        border-radius: 50%;
+                        padding: 0.3em;
+                        font-size: 1.2rem;
+                        border: 1px solid #fff;
+                    }
+
+                    .fa-thumbs-up {
+                        background-color: #1b74e4;
+                        color: #fff;
+                        z-index: 10;
+                    }
+
+                    .fa-heart {
+                        left: 19px;
+                        background-color: #f3425f;
+                        color: #fff;
+                        z-index: 9;
+                    }
+
+                    .fa-surprise {
+                        left: 38px;
+                        color: #f7b928;
+                        padding: 0;
+                        font-size: 2rem;
+                        z-index: 8;
+                    }
+                }
+            }
+        }
+
+        .post-btns {
+            display: flex;
+            padding: 0.2em 0;
+            justify-content: space-evenly;
+
+            .like-btn,
+            .comment-btn,
+            .share-btn {
+                display: flex;
+                padding: 0.5em 0;
+                flex: 0 1 33%;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #eff2f5;
+                }
+            }
+
+            span {
+                margin-left: 0.5em;
+            }
+        }
+    }
+
+    /****posts styles ends*****/
+
+
 
 
     /****contacts styles starts*****/
     &__contacts {
-        display: flex;
+        display: none;
         flex-direction: column;
         margin: 1em 0.5em;
         font-size: 1.5rem;
@@ -580,3 +795,6 @@ body {
         }
     }
 }
+
+/****RWD Links*****/
+@import '_medium.scss';

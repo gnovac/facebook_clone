@@ -1,0 +1,71 @@
+@media (min-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .nav {
+        flex-direction: row;
+
+        &__link{
+            flex: 0 1 10%;
+        }
+
+        &__right {
+            display: flex;
+        }
+    }
+
+    .main {
+        display: flex;
+
+        .wall {
+            align-items: center;
+        }
+
+        &__sidebar {
+            display: flex;
+        }
+
+        &__stories {
+            order: 1;
+            width: 55%;
+            overflow-x: visible;
+            margin: 1.5em 0 0.5em 0;
+        }
+
+        &__storie {
+            flex: 0 1 auto;
+
+            span:last-child {
+                display: block;
+            }
+        }
+
+        &__create-post {
+            order: 2;
+            width: 55%;
+
+            .underline {
+                display: block;
+            }
+        }
+
+        &__create-post-tools {
+            display: flex;
+        }
+
+        &__create-room {
+            order: 3;
+            display: flex;
+        }
+
+        &__posts {
+            order: 4;
+            width: 55%;
+        }
+
+        &__contacts {
+            display: flex;
+        }
+    }
+}
