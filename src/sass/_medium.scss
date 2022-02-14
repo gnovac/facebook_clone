@@ -4,14 +4,28 @@
     }
 
     .nav {
-        flex-direction: row;
+        &__input {
+            padding: 0.5em;
+        }
 
-        &__link{
+        &__link {
+            display: flex;
             flex: 0 1 10%;
         }
 
         &__right {
             display: flex;
+        }
+
+        &__avatar {
+            display: flex;
+        }
+
+        &__dropdown {
+
+            .menu-icons {
+                padding: 0.5em;
+            }
         }
     }
 
@@ -22,15 +36,9 @@
             align-items: center;
         }
 
-        &__sidebar {
-            display: flex;
-        }
-
         &__stories {
-            order: 1;
-            width: 55%;
+            width: 90%;
             overflow-x: visible;
-            margin: 1.5em 0 0.5em 0;
         }
 
         &__storie {
@@ -42,8 +50,7 @@
         }
 
         &__create-post {
-            order: 2;
-            width: 55%;
+            width: 90%;
 
             .underline {
                 display: block;
@@ -55,17 +62,16 @@
         }
 
         &__create-room {
-            order: 3;
-            display: flex;
+            width: 90%;
+            overflow-x: hidden;
+
+            .arrow-outside {
+                display: block;
+            }
         }
 
         &__posts {
-            order: 4;
-            width: 55%;
-        }
-
-        &__contacts {
-            display: flex;
+            width: 90%;
         }
     }
 }

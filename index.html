@@ -7,315 +7,428 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script src="https://kit.fontawesome.com/907ccae0c7.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/907ccae0c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
     <div class="nav">
-    <div class="nav__left">
-        <img src="dist/img/facebook-logo.png" alt="Facebook logo">
-        <div class="nav__input">
-            <span class="material-icons"> search </span>
-            <input type="text" class="" placeholder="Szukaj na Facebooku">
+        <div class="nav__left">
+            <img src="dist/img/facebook-logo.png" alt="Facebook logo">
+            <div class="nav__input">
+                <span class="material-icons"> search </span>
+                <input type="text" class="" placeholder="Szukaj na Facebooku">
+            </div>
         </div>
-    </div>
 
-    <div class="nav__middle">
-        <div class="nav__link active">
-            <span class="material-icons home"> home </span>
+        <div class="nav__middle">
+            <div class="nav__link active">
+                <span class="material-icons home"> home </span>
+            </div>
+            <div class="nav__link nonactive">
+                <span class="material-icons video"> ondemand_video </span>
+            </div>
+            <div class="nav__link nonactive">
+                <span class="material-icons store"> storefront </span>
+            </div>
+            <div class="nav__link nonactive">
+                <span class="material-icons groups"> supervised_user_circle </span>
+            </div>
         </div>
-        <div class="nav__link nonactive">
-            <span class="material-icons video"> ondemand_video </span>
-        </div>
-        <div class="nav__link nonactive">
-            <span class="material-icons store"> storefront </span>
-        </div>
-        <div class="nav__link nonactive">
-            <span class="material-icons groups"> supervised_user_circle </span>
-        </div>
-    </div>
 
-    <div class="nav__right">
-        <div class="nav__avatar">
-            <img src="dist/img/avatar.png" alt="profile owner avatar">
-            <h4>Grzegorz</h4>
-        </div>
-        <div class="nav__dropdown">
-            <span class="material-icons menu-icons"> apps </span>
-            <i class="fab fa-facebook-messenger menu-icons"></i>
-            <span class="material-icons menu-icons"> notifications </span>
-            <span class="material-icons menu-icons"> arrow_drop_down </span>
+        <div class="nav__right">
+            <div class="nav__avatar">
+                <img src="dist/img/avatar.png" alt="profile owner avatar">
+                <h4>Grzegorz</h4>
+            </div>
+            <div class="nav__dropdown">
+                <span class="material-icons menu-icons"> apps </span>
+                <i class="fab fa-facebook-messenger menu-icons"></i>
+                <span class="material-icons menu-icons"> notifications </span>
+                <span class="material-icons menu-icons"> arrow_drop_down </span>
+            </div>
         </div>
     </div>
-</div>
     <div class="main">
         <div class="main__sidebar">
-    <div class="main__siderow">
-        <img src="dist/img/avatar.png" alt="profile owner avatar">
-        <h4 class="name">Grzegorz Nowak</h4>
-    </div>
-    <div class="main__siderow">
-        <span class="material-icons friends"> people </span>
-        <h4>Znajomi</h4>
-    </div>
-    <div class="main__siderow">
-        <span class="material-icons saved"> bookmark </span>
-        <h4>Zapisane</h4>
-    </div>
-    <div class="main__siderow">
-        <span class="material-icons groups"> supervised_user_circle </span>
-        <h4>Grupy</h4>
-    </div>
-    <div class="main__siderow">
-        <span class="material-icons marketplace"> storefront </span>
-        <h4>Marketplace</h4>
-    </div>
-    <div class="main__siderow">
-        <span class="material-icons watch"> ondemand_video </span>
-        <h4>Watch</h4>
-    </div>
-    <div class="main__siderow">
-        <span class="material-icons memories"> restore </span>
-        <h4>Wspomnienia</h4>
-    </div>
-    <div class="main__siderow">
-        <span class="material-icons pages"> flag </span>
-        <h4>Strony</h4>
-    </div>
-    <div class="main__siderow">
-        <span class="material-icons see-more"> expand_more </span>
-        <h4 class="last">Zobacz więcej</h4>
-    </div>
-    <div class="underline"></div>
-</div>
+            <div class="main__siderow">
+                <img src="dist/img/avatar.png" alt="profile owner avatar">
+                <h4 class="name">Grzegorz Nowak</h4>
+            </div>
+            <div class="main__siderow">
+                <span class="material-icons friends"> people </span>
+                <h4>Znajomi</h4>
+            </div>
+            <div class="main__siderow">
+                <span class="material-icons saved"> bookmark </span>
+                <h4>Zapisane</h4>
+            </div>
+            <div class="main__siderow">
+                <span class="material-icons groups"> supervised_user_circle </span>
+                <h4>Grupy</h4>
+            </div>
+            <div class="main__siderow">
+                <span class="material-icons marketplace"> storefront </span>
+                <h4>Marketplace</h4>
+            </div>
+            <div class="main__siderow">
+                <span class="material-icons watch"> ondemand_video </span>
+                <h4>Watch</h4>
+            </div>
+            <div class="main__siderow">
+                <span class="material-icons memories"> restore </span>
+                <h4>Wspomnienia</h4>
+            </div>
+            <div class="main__siderow">
+                <span class="material-icons pages"> flag </span>
+                <h4>Strony</h4>
+            </div>
+            <div class="main__siderow">
+                <span class="material-icons see-more"> expand_more </span>
+                <h4 class="last">Zobacz więcej</h4>
+            </div>
+            <div class="underline"></div>
+        </div>
         <div class="wall">
             <div class="main__stories">
-    <div class="main__storie main__storie--add">
-        <div class="box-shadow"></div>
-        <span class="material-icons"> add_circle </span>
-        <h5>Utwórz relację</h5>
-    </div>
-    <div class="main__storie main__storie--one">
-        <div class="box-shadow"></div>
-        <img src="dist/img/ContactAvatar_6.png" alt="">
-        <h5>Airplans views</h5>
-    </div>
-    <div class="main__storie main__storie--two">
-        <div class="box-shadow"></div>
-        <img src="dist/img/ContactAvatar_8.png" alt="">
-        <h5>Cars Tunning</h5>
-    </div>
-    <div class="main__storie main__storie--three">
-        <div class="box-shadow"></div>
-        <img src="dist/img/ContactAvatar_9.png" alt="">
-        <h5>Tanie loty</h5>
-    </div>
-    <div class="main__storie main__storie--four">
-        <div class="box-shadow"></div>
-        <img src="dist/img/ContactAvatar_1.png" alt="">
-        <h5>Wakacyjni Piraci</h5>
-    </div>
-    <div class="main__storie main__storie--five">
-        <div class="box-shadow"></div>
-        <img src="dist/img/ContactAvatar_3.png" alt="">
-        <h5>Japan Travels</h5>
-        <span class="material-icons"> arrow_forward </span>
-    </div>
-</div>
+                <div class="main__storie main__storie--add">
+                    <div class="box-shadow"></div>
+                    <span class="material-icons"> add_circle </span>
+                    <h5>Utwórz relację</h5>
+                </div>
+                <div class="main__storie main__storie--one">
+                    <div class="box-shadow"></div>
+                    <img src="dist/img/ContactAvatar_6.png" alt="">
+                    <h5>Airplans views</h5>
+                </div>
+                <div class="main__storie main__storie--two">
+                    <div class="box-shadow"></div>
+                    <img src="dist/img/ContactAvatar_8.png" alt="">
+                    <h5>Cars Tunning</h5>
+                </div>
+                <div class="main__storie main__storie--three">
+                    <div class="box-shadow"></div>
+                    <img src="dist/img/ContactAvatar_9.png" alt="">
+                    <h5>Tanie loty</h5>
+                </div>
+                <div class="main__storie main__storie--four">
+                    <div class="box-shadow"></div>
+                    <img src="dist/img/ContactAvatar_1.png" alt="">
+                    <h5>Wakacyjni Piraci</h5>
+                </div>
+                <div class="main__storie main__storie--five">
+                    <div class="box-shadow"></div>
+                    <img src="dist/img/ContactAvatar_3.png" alt="">
+                    <h5>Japan Travels</h5>
+                    <span class="material-icons"> arrow_forward </span>
+                </div>
+            </div>
             <div class="main__create-post">
-    <div class="main__create-post-input">
-        <img src="dist/img/avatar.png" alt="profile owner avatar">
-        <input type="text" placeholder="O czym myślisz ?">
-    </div>
-    <div class="underline"></div>
-    <div class="main__create-post-tools">
-        <div class="post-btn">
-            <span class="material-icons post-video"> video_camera_back </span>
-            <h4>Transmisja wideo na żywo</h4>
-        </div>
-        <div class="post-btn">
-            <span class="material-icons post-photo"> collections </span>
-            <h4>Zdjęcie/film</h4>
-        </div>
-        <div class="post-btn">
-            <span class="material-icons post-emoji"> tag_faces </span>
-            <h4>Nastrój/aktywność</h4>
-        </div>
-    </div>
-</div>
+                <div class="main__create-post-input">
+                    <img src="dist/img/avatar.png" alt="profile owner avatar">
+                    <input type="text" placeholder="O czym myślisz ?">
+                </div>
+                <div class="underline"></div>
+                <div class="main__create-post-tools">
+                    <div class="post-btn">
+                        <span class="material-icons post-video"> video_camera_back </span>
+                        <h4>Transmisja wideo na żywo</h4>
+                    </div>
+                    <div class="post-btn">
+                        <span class="material-icons post-photo"> collections </span>
+                        <h4>Zdjęcie/film</h4>
+                    </div>
+                    <div class="post-btn">
+                        <span class="material-icons post-emoji"> tag_faces </span>
+                        <h4>Nastrój/aktywność</h4>
+                    </div>
+                </div>
+            </div>
             <div class="main__create-room">
-    <div class="main__create-room-btn">
-        <span class="material-icons"> video_call </span>
-        <h4>Utwórz pokój</h4>
-    </div>
-    <div class="main__create-room-contacts">
-        <img src="dist/img/ContactAvatar_1.png" alt="messanger avatar">
-        <img src="dist/img/ContactAvatar_2.png" alt="messanger avatar">
-        <img src="dist/img/ContactAvatar_3.png" alt="messanger avatar">
-        <img src="dist/img/ContactAvatar_4.png" alt="messanger avatar">
-        <img src="dist/img/ContactAvatar_5.png" alt="messanger avatar">
-        <img src="dist/img/ContactAvatar_6.png" alt="messanger avatar">
-        <img src="dist/img/ContactAvatar_7.png" alt="messanger avatar">
-        <img src="dist/img/ContactAvatar_8.png" alt="messanger avatar">
-        <img src="dist/img/ContactAvatar_9.png" alt="messanger avatar">
-    </div>
-    <span class="material-icons arrow-outside"> navigate_next </span>
-</div>
+                <div class="main__create-room-btn">
+                    <span class="material-icons"> video_call </span>
+                    <h4>Utwórz pokój</h4>
+                </div>
+                <div class="main__create-room-contacts">
+                    <img src="dist/img/ContactAvatar_1.png" alt="messanger avatar">
+                    <img src="dist/img/ContactAvatar_2.png" alt="messanger avatar">
+                    <img src="dist/img/ContactAvatar_3.png" alt="messanger avatar">
+                    <img src="dist/img/ContactAvatar_4.png" alt="messanger avatar">
+                    <img src="dist/img/ContactAvatar_5.png" alt="messanger avatar">
+                    <img src="dist/img/ContactAvatar_6.png" alt="messanger avatar">
+                    <img src="dist/img/ContactAvatar_7.png" alt="messanger avatar">
+                    <img src="dist/img/ContactAvatar_8.png" alt="messanger avatar">
+                    <img src="dist/img/ContactAvatar_9.png" alt="messanger avatar">
+                </div>
+                <span class="material-icons arrow-outside"> navigate_next </span>
+            </div>
             <div class="main__posts">
-    <div class="main__post">
-        <div class="main__post-header">
-            <div class="post-info">
-                <div class="post-info--left">
-                    <img src="dist/img/ContactAvatar_5.png" alt="Post Avatar">
+                <div class="main__post">
+                    <div class="main__post-header">
+                        <div class="post-info">
+                            <div class="post-info--left">
+                                <img src="dist/img/ContactAvatar_5.png" alt="Post Avatar">
+                            </div>
+                            <div class="post-info--right">
+                                <p class="post-owner underline-hover">Marek Szulc</p>
+                                <div class="container-info">
+                                    <span class="post-time underline-hover">23 min.</span>
+                                    <span class="dot">.</span>
+                                    <span class="material-icons"> public </span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="material-icons tools-icon"> more_horiz </span>
+                    </div>
+                    <div class="main__post-content">
+                        <p class="post-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+                            ratione nam
+                            voluptates iste aliquam distinctio corporis earum ad nobis, ipsa nisi perspiciatis, vel
+                            perferendis
+                            nulla facilis voluptate non dolores placeat!</p>
+                        <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="Post Image">
+                    </div>
+                    <div class="main__post-options">
+                        <div class="post-react-btns">
+                            <div class="post-reactions">
+                                <div class="reactions-icons">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fas fa-surprise"></i>
+                                </div>
+                                <p class="reactions-count underline-hover">100</p>
+                            </div>
+                            <div class="post-comments">
+                                <span class="underline-hover">100 Komentarzy</span>
+                                <span class="underline-hover">100 Udostępnienia</span>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="post-btns">
+                            <div class="like-btn"><i class="far fa-thumbs-up"></i><span>Lubię to!</span></div>
+                            <div class="comment-btn"><i class="far fa-comment"></i><span>Komentarz</span></div>
+                            <div class="share-btn"><i class="fas fa-share"></i><span>Udostępnij</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="post-info--right">
-                    <p class="post-owner underline-hover">Marek Szulc</p>
-                    <div class="container-info">
-                        <span class="post-time underline-hover">5 godz.</span>
-                        <span class="dot">.</span>
-                        <span class="material-icons"> public </span>
+                <div class="main__post">
+                    <div class="main__post-header">
+                        <div class="post-info">
+                            <div class="post-info--left">
+                                <img src="dist/img/ContactAvatar_10.png" alt="Post Avatar">
+                            </div>
+                            <div class="post-info--right">
+                                <p class="post-owner underline-hover">>Adrianna Michalak</p>
+                                <div class="container-info">
+                                    <span class="post-time underline-hover">2 godz.</span>
+                                    <span class="dot">.</span>
+                                    <span class="material-icons"> public </span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="material-icons tools-icon"> more_horiz </span>
+                    </div>
+                    <div class="main__post-content">
+                        <p class="post-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+                            ratione nam
+                            voluptates iste aliquam distinctio corporis earum ad nobis, ipsa nisi perspiciatis, vel
+                            perferendis
+                            nulla facilis voluptate non dolores placeat!</p>
+                        <img src="https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                            alt="Post Image">
+                    </div>
+                    <div class="main__post-options">
+                        <div class="post-react-btns">
+                            <div class="post-reactions">
+                                <div class="reactions-icons">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fas fa-surprise"></i>
+                                </div>
+                                <p class="reactions-count underline-hover">100</p>
+                            </div>
+                            <div class="post-comments">
+                                <span class="underline-hover">100 Komentarzy</span>
+                                <span class="underline-hover">100 Udostępnienia</span>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="post-btns">
+                            <div class="like-btn"><i class="far fa-thumbs-up"></i><span>Lubię to!</span></div>
+                            <div class="comment-btn"><i class="far fa-comment"></i><span>Komentarz</span></div>
+                            <div class="share-btn"><i class="fas fa-share"></i><span>Udostępnij</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__post">
+                    <div class="main__post-header">
+                        <div class="post-info">
+                            <div class="post-info--left">
+                                <img src="dist/img/ContactAvatar_8.png" alt="Post Avatar">
+                            </div>
+                            <div class="post-info--right">
+                                <p class="post-owner underline-hover">Patrycja Mazur</p>
+                                <div class="container-info">
+                                    <span class="post-time underline-hover">8 godz.</span>
+                                    <span class="dot">.</span>
+                                    <span class="material-icons"> public </span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="material-icons tools-icon"> more_horiz </span>
+                    </div>
+                    <div class="main__post-content">
+                        <p class="post-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+                            ratione nam
+                            voluptates iste aliquam distinctio corporis earum ad nobis, ipsa nisi perspiciatis, vel
+                            perferendis
+                            nulla facilis voluptate non dolores placeat!</p>
+                        <img src="https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                            alt="Post Image">
+                    </div>
+                    <div class="main__post-options">
+                        <div class="post-react-btns">
+                            <div class="post-reactions">
+                                <div class="reactions-icons">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fas fa-surprise"></i>
+                                </div>
+                                <p class="reactions-count underline-hover">100</p>
+                            </div>
+                            <div class="post-comments">
+                                <span class="underline-hover">100 Komentarzy</span>
+                                <span class="underline-hover">100 Udostępnienia</span>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="post-btns">
+                            <div class="like-btn"><i class="far fa-thumbs-up"></i><span>Lubię to!</span></div>
+                            <div class="comment-btn"><i class="far fa-comment"></i><span>Komentarz</span></div>
+                            <div class="share-btn"><i class="fas fa-share"></i><span>Udostępnij</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__post">
+                    <div class="main__post-header">
+                        <div class="post-info">
+                            <div class="post-info--left">
+                                <img src="dist/img/ContactAvatar_2.png" alt="Post Avatar">
+                            </div>
+                            <div class="post-info--right">
+                                <p class="post-owner underline-hover">Klaudia Górska</p>
+                                <div class="container-info">
+                                    <span class="post-time underline-hover">10 godz.</span>
+                                    <span class="dot">.</span>
+                                    <span class="material-icons"> public </span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="material-icons tools-icon"> more_horiz </span>
+                    </div>
+                    <div class="main__post-content">
+                        <p class="post-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+                            ratione nam
+                            voluptates iste aliquam distinctio corporis earum ad nobis, ipsa nisi perspiciatis, vel
+                            perferendis
+                            nulla facilis voluptate non dolores placeat!</p>
+                        <img src="https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80"
+                            alt="Post Image">
+                    </div>
+                    <div class="main__post-options">
+                        <div class="post-react-btns">
+                            <div class="post-reactions">
+                                <div class="reactions-icons">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fas fa-surprise"></i>
+                                </div>
+                                <p class="reactions-count underline-hover">100</p>
+                            </div>
+                            <div class="post-comments">
+                                <span class="underline-hover">100 Komentarzy</span>
+                                <span class="underline-hover">100 Udostępnienia</span>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="post-btns">
+                            <div class="like-btn"><i class="far fa-thumbs-up"></i><span>Lubię to!</span></div>
+                            <div class="comment-btn"><i class="far fa-comment"></i><span>Komentarz</span></div>
+                            <div class="share-btn"><i class="fas fa-share"></i><span>Udostępnij</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <span class="material-icons tools-icon"> more_horiz </span>
-        </div>
-        <div class="main__post-content">
-            <p class="post-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ratione nam
-                voluptates iste aliquam distinctio corporis earum ad nobis, ipsa nisi perspiciatis, vel perferendis
-                nulla facilis voluptate non dolores placeat!</p>
-            <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="Post Image">
-        </div>
-        <div class="main__post-options">
-            <div class="post-react-btns">
-                <div class="post-reactions">
-                    <div class="reactions-icons">
-                        <i class="fas fa-thumbs-up"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-surprise"></i>
-                    </div>
-                    <p class="reactions-count underline-hover">100</p>
-                </div>
-                <div class="post-comments">
-                    <span class="underline-hover">100 Komentarzy</span>
-                    <span class="underline-hover">100 Udostępnienia</span>
-                </div>
-            </div>
-            <div class="underline"></div>
-            <div class="post-btns">
-                <div class="like-btn"><i class="far fa-thumbs-up"></i><span>Lubię to!</span></div>
-                <div class="comment-btn"><i class="far fa-comment"></i><span>Komentarz</span></div>
-                <div class="share-btn"><i class="fas fa-share"></i><span>Udostępnij</span></div>
-            </div>
-        </div>
-    </div>
-    <div class="main__post">
-        <div class="main__post-header">
-            <div class="post-info">
-                <div class="post-info--left">
-                    <img src="dist/img/ContactAvatar_5.png" alt="Post Avatar">
-                </div>
-                <div class="post-info--right">
-                    <p class="post-owner underline-hover">Marek Szulc</p>
-                    <div class="container-info">
-                        <span class="post-time underline-hover">5 godz.</span>
-                        <span class="dot">.</span>
-                        <span class="material-icons"> public </span>
-                    </div>
-                </div>
-            </div>
-            <span class="material-icons tools-icon"> more_horiz </span>
-        </div>
-        <div class="main__post-content">
-            <p class="post-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ratione nam
-                voluptates iste aliquam distinctio corporis earum ad nobis, ipsa nisi perspiciatis, vel perferendis
-                nulla facilis voluptate non dolores placeat!</p>
-            <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="Post Image">
-        </div>
-        <div class="main__post-options">
-            <div class="post-react-btns">
-                <div class="post-reactions">
-                    <div class="reactions-icons">
-                        <i class="fas fa-thumbs-up"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-surprise"></i>
-                    </div>
-                    <p class="reactions-count underline-hover">100</p>
-                </div>
-                <div class="post-comments">
-                    <span class="underline-hover">100 Komentarzy</span>
-                    <span class="underline-hover">100 Udostępnienia</span>
-                </div>
-            </div>
-            <div class="underline"></div>
-            <div class="post-btns">
-                <div class="like-btn"><i class="far fa-thumbs-up"></i><span>Lubię to!</span></div>
-                <div class="comment-btn"><i class="far fa-comment"></i><span>Komentarz</span></div>
-                <div class="share-btn"><i class="fas fa-share"></i><span>Udostępnij</span></div>
-            </div>
-        </div>
-    </div>
-</div>
         </div>
         <div class="main__contacts">
-    <div class="main__contacts-header">
-        <h3>Kontakty</h3>
-        <div class="tools">
-            <span class="material-icons"> video_call </span>
-            <span class="material-icons"> search </span>
-            <span class="material-icons"> more_horiz </span>
+            <div class="main__contacts-header">
+                <h3>Kontakty</h3>
+                <div class="tools">
+                    <span class="material-icons"> video_call </span>
+                    <span class="material-icons"> search </span>
+                    <span class="material-icons"> more_horiz </span>
+                </div>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_1.png" alt="messanger avatar">
+                <h4 class="name">Milan Borkowski</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_2.png" alt="messanger avatar">
+                <h4 class="name">Klaudia Górska</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_3.png" alt="messanger avatar">
+                <h4 class="name">Artur Chmielewski</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_4.png" alt="messanger avatar">
+                <h4 class="name">Izabela Sadowska</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_5.png" alt="messanger avatar">
+                <h4 class="name">Marek Szulc</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_6.png" alt="messanger avatar">
+                <h4 class="name">Alexander Kamiński</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_7.png" alt="messanger avatar">
+                <h4 class="name">Damian Michalak</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_8.png" alt="messanger avatar">
+                <h4 class="name">Patrycja Mazur</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_9.png" alt="messanger avatar">
+                <h4 class="name">Eugeniusz Szewczyk</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_10.png" alt="messanger avatar">
+                <h4 class="name">Adrianna Michalak</h4>
+            </div>
+            <div class="main__contacts-item">
+                <img src="dist/img/ContactAvatar_11.png" alt="messanger avatar">
+                <h4 class="name">Julian Mazur</h4>
+            </div>
         </div>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_1.png" alt="messanger avatar">
-        <h4 class="name">Milan Borkowski</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_2.png" alt="messanger avatar">
-        <h4 class="name">Klaudia Górska</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_3.png" alt="messanger avatar">
-        <h4 class="name">Artur Chmielewski</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_4.png" alt="messanger avatar">
-        <h4 class="name">Izabela Sadowska</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_5.png" alt="messanger avatar">
-        <h4 class="name">Marek Szulc</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_6.png" alt="messanger avatar">
-        <h4 class="name">Alexander Kamiński</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_7.png" alt="messanger avatar">
-        <h4 class="name">Damian Michalak</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_8.png" alt="messanger avatar">
-        <h4 class="name">Patrycja Mazur</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_9.png" alt="messanger avatar">
-        <h4 class="name">Eugeniusz Szewczyk</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_10.png" alt="messanger avatar">
-        <h4 class="name">Adrianna Michalak</h4>
-    </div>
-    <div class="main__contacts-item">
-        <img src="dist/img/ContactAvatar_11.png" alt="messanger avatar">
-        <h4 class="name">Julian Mazur</h4>
-    </div>
-</div>
+
+
+        <div class="main__contacts-mobile">
+            <img src="dist/img/ContactAvatar_1.png" alt="messanger avatar">
+            <img src="dist/img/ContactAvatar_2.png" alt="messanger avatar">
+            <img src="dist/img/ContactAvatar_3.png" alt="messanger avatar">
+            <img src="dist/img/ContactAvatar_4.png" alt="messanger avatar">
+            <img src="dist/img/ContactAvatar_5.png" alt="messanger avatar">
+            <img src="dist/img/ContactAvatar_6.png" alt="messanger avatar">
+            <span class="material-icons"> open_in_new </span>
+        </div>
     </div>
 
 
