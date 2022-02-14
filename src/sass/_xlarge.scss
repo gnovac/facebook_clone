@@ -1,0 +1,23 @@
+@media(min-width: 1200px) {
+    .main {
+        &__sidebar {
+            display: flex;
+        }
+
+        &__stories {
+            width: 70%;
+        }
+
+        &__create-post {
+            width: 70%;
+        }
+
+        &__create-room {
+            width: 70%;
+        }
+
+        &__posts {
+            width: 70%;
+        }
+    }
+}

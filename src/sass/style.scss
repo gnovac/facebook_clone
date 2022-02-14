@@ -14,13 +14,10 @@ body {
     font-size: 1.6rem;
 }
 
-
-
 /****navigation styles starts*****/
 .nav {
     display: flex;
     align-items: stretch;
-    flex-direction: column;
     justify-content: space-between;
     background-color: #fff;
     position: sticky;
@@ -44,7 +41,7 @@ body {
         display: flex;
         align-items: center;
         background-color: #ecedf1;
-        padding: 0.5em;
+        padding: 0.7em;
         border-radius: 25px;
 
         span {
@@ -52,6 +49,7 @@ body {
         }
 
         input {
+            display: none;
             background: transparent;
             border: none;
             padding-left: 0.4em;
@@ -70,7 +68,7 @@ body {
     }
 
     &__link {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         flex: 1 1 25%;
@@ -102,7 +100,7 @@ body {
     }
 
     &__right {
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: center;
         padding-right: 1em;
@@ -110,7 +108,7 @@ body {
     }
 
     &__avatar {
-        display: flex;
+        display: none;
         align-items: center;
         padding: 0.2em 0.6em;
         cursor: pointer;
@@ -137,7 +135,7 @@ body {
         padding-left: 0.5em;
 
         .menu-icons {
-            padding: 0.5em;
+            padding: 0.6em;
             margin: 0.2em;
             background-color: #e4e6eb;
             font-size: 2rem;
@@ -171,8 +169,6 @@ body {
 }
 
 /****navigation styles ends*****/
-
-
 
 
 /****sidebar styles starts*****/
@@ -262,8 +258,6 @@ body {
 
     /****sidebar styles ends*****/
 
-
-
     .wall {
         display: flex;
         align-items: stretch;
@@ -272,16 +266,14 @@ body {
         flex: 4;
     }
 
-
-
     /****stories styles starts*****/
 
     &__stories {
-        order: 2;
         position: relative;
         display: flex;
         justify-content: space-between;
         width: 100%;
+        padding: 1.5em 0;
         overflow-x: scroll;
         margin: 0;
     }
@@ -405,12 +397,9 @@ body {
     /****stories styles ends*****/
 
 
-
-
     /****createPostBox styles starts****/
 
     &__create-post {
-        order: 1;
         display: flex;
         flex-direction: column;
         background-color: #fff;
@@ -424,7 +413,6 @@ body {
             display: none;
         }
     }
-
 
     &__create-post-input {
         display: flex;
@@ -497,13 +485,10 @@ body {
     /****createPostBox styles ends****/
 
 
-
-
     /****createRoomBox styles starts****/
-
     &__create-room {
         position: relative;
-        display: none;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #fff;
@@ -511,10 +496,12 @@ body {
         margin: 0.5em 0;
         border-radius: 8px;
         box-shadow: 0 5px 8px -9px rgba(0, 0, 0, .75);
-        width: 55%;
+        width: 100%;
+        overflow-x: scroll;
 
         .arrow-outside {
             position: absolute;
+            display: none;
             padding: 0.2em;
             right: 10px;
             border-radius: 50%;
@@ -556,6 +543,8 @@ body {
     }
 
     &__create-room-contacts {
+        display: flex;
+
         img {
             height: 40px;
             border-radius: 50%;
@@ -567,14 +556,11 @@ body {
     /****createRoomBox styles ends****/
 
 
-
-
     /****posts styles starts*****/
     &__posts {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        order: 3;
         width: 100%;
         background-color: #f2f3f5;
         margin: 0.5em 0;
@@ -588,12 +574,11 @@ body {
         }
     }
 
-    &__post{
+    &__post {
         background-color: #fff;
         box-shadow: 0 5px 8px -9px rgba(0, 0, 0, .75);
         margin: 0.5em 0;
     }
-
 
     &__post-header {
         display: flex;
@@ -664,6 +649,7 @@ body {
 
         img {
             width: 100%;
+            max-height: 700px;
         }
     }
 
@@ -746,8 +732,6 @@ body {
     /****posts styles ends*****/
 
 
-
-
     /****contacts styles starts*****/
     &__contacts {
         display: none;
@@ -774,6 +758,10 @@ body {
                 background-color: #e4e6eb;
             }
         }
+
+        .tools {
+            display: flex;
+        }
     }
 
     &__contacts-item {
@@ -794,7 +782,39 @@ body {
             margin-right: 0.7em;
         }
     }
+
+    &__contacts-mobile {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+
+        img {
+            height: 45px;
+            border-radius: 50%;
+            margin: 0.5em 1em;
+            box-shadow: 0 0 2px 0px rgb(0 0 0 / 75%);
+        }
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            margin: 0.5em 1em 0.5em 1em;
+            background-color: #fff;
+            box-shadow: 0 0 2px 0px rgb(0 0 0 / 75%);
+        }
+    }
 }
 
 /****RWD Links*****/
 @import '_medium.scss';
+@import '_large.scss';
+@import '_xlarge.scss';
+@import '_xxlarge.scss';
